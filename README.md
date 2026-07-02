@@ -21,25 +21,19 @@ git clone <url-del-repositorio>
 cd PI_chatbot
 ```
 
-### 2. Inicializa el proyecto con uv
-
-```bash
-uv init
-```
-
-### 3. Sincroniza el entorno virtual
+### 2. Sincroniza el entorno virtual
 
 ```bash
 uv sync
 ```
 
-### 4. Instala las dependencias desde requirements.txt
+### 3. Instala las dependencias desde requirements.txt
 
 ```bash
 uv add -r requirements.txt
 ```
 
-### 5. Configura tu API Key de OpenAI
+### 4. Configura tu API Key de OpenAI
 
 Copia el archivo de ejemplo y agrega tu clave:
 
@@ -60,7 +54,7 @@ OPENAI_API_KEY='sk-...'
 ### Con la pregunta directamente en la terminal
 
 ```bash
-uv run python main.py "¿Cuándo es válida la promoción?"
+uv run python main.py "¿Que planes tienes y que costo tienen?"
 ```
 
 ### Sin argumento (modo interactivo)
@@ -88,16 +82,16 @@ El flag `--search-type` controla cómo se recuperan los chunks relevantes antes 
 
 ```bash
 # k-NN (default)
-uv run python main.py "¿Cuáles son los comercios participantes?"
+uv run python main.py "¿Se puede conectar con Slack?"
 
 # ANN/MMR — resultados diversos, sin repetición
-uv run python main.py --search-type mmr "¿Qué beneficios ofrece?"
+uv run python main.py --search-type mmr "¿Se pueden configurar turnos para mis empleados?"
 
 # Rango — solo chunks con alta similitud
-uv run python main.py --search-type threshold "¿Cuándo vence la promoción?"
+uv run python main.py --search-type threshold "¿Se puede modificar una nómina ya procesada?"
 
 # Híbrido BM25 + vectorial
-uv run python main.py --search-type hybrid "¿Cuál es el proceso de registro?"
+uv run python main.py --search-type hybrid "¿Puedo hacer los pagos a mis empleados desde la plataforma?"
 
 # Modo interactivo con método específico
 uv run python main.py --search-type hybrid
@@ -109,7 +103,7 @@ Cada consulta devuelve un JSON con tres campos para garantizar transparencia y a
 
 ```json
 {
-  "user_question": "¿Cuáles son los comercios participantes?",
+  "user_question": "¿Como calcular las horas extra?",
   "system_answer": "Los comercios participantes son ...",
   "chunks_related": [
     {

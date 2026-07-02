@@ -1,19 +1,458 @@
-Por tu lealtad te hemos reembolsado el total del cargo de anualidad de tu Tarjeta
-de Crédito BBVA.
-*La anualidad es la Comisión por Administración de tarjeta del titular.
-●
-●
-El reembolso se hizo en automático.
-En tu estado de cuenta verás reflejados tanto el cargo como el reembolso.
-El reembolso total del cargo de anualidad aplica solo para la tarjeta de crédito
-BBVA que recibió el aviso a través de correo electrónico o por la App BBVA.
-El reembolso del cargo de la comisión por administración de la tarjeta de crédito
-del titular lo podrás ver reflejado en el estado de cuenta de la tarjeta de crédito
-BBVA participante, bajo el concepto "FELICIDADES CUOTA ANUAL” o “ABONO
-ADMIN TARJ TITULAR". posterior al cargo.
-A partir del próximo año y hasta que mantengas activa tu tarjeta de crédito BBVA,
-ya no se te cobrará la anualidad, por lo que no volverás a ver este cargo en tu
-estado de cuenta. Sin embargo, si en el transcurso del año y años posteriores
-caes en mora en 2 ocasiones, el beneficio de Comisión por Administración de
-tarjeta del titular se pierde.
-El beneficio es personal e intransferible.
+================================================================================
+NEXORH — CENTRO DE AYUDA Y DOCUMENTACIÓN
+================================================================================
+Plataforma de recursos humanos. Versión de referencia: 4.2 (enero 2026).
+Planes disponibles: Esencial, Profesional y Empresa.
+Roles: Empleado, Manager, Admin de RRHH y Propietario de la cuenta.
+
+
+--------------------------------------------------------------------------------
+1. CUENTA, PLANES Y FACTURACIÓN
+--------------------------------------------------------------------------------
+
+Planes y precios (por empleado activo al mes):
+  - Esencial: 200 mxn/mes (150 mxn en pago anual). Hasta 25 empleados.
+  - Profesional: 300 mxn/mes (200 mxn en pago anual). Hasta 250 empleados.
+  - Empresa: precio personalizado. Más de 250 empleados.
+
+Un "empleado activo" es el que está en estado Activo o En periodo de prueba el
+día del corte de facturación. Los empleados en estado Baja, Suspendido o
+Invitado (sin aceptar) no cuentan para la factura.
+
+Qué incluye cada plan:
+  - Esencial: gestión de empleados, vacaciones y ausencias, control horario
+    básico y hasta 2 integraciones.
+  - Profesional: lo anterior más nóminas, evaluaciones de desempeño, onboarding
+    con flujos, API y hasta 15 integraciones.
+  - Empresa: lo anterior más SSO/SAML, roles personalizados, entorno de sandbox,
+    gestor de cuenta dedicado y soporte prioritario.
+
+¿Cómo cambio de plan?
+En Configuración > Facturación > Plan. Al subir de plan el cambio es inmediato
+con un cargo prorrateado; al bajar de plan se aplica en el siguiente ciclo. Solo
+el Propietario o un Admin con permiso de facturación pueden hacerlo.
+
+¿Cómo cambio de pago mensual a anual?
+En Configuración > Facturación > Ciclo de pago, elige Anual para aplicar el
+descuento. El cambio se hace efectivo en el próximo ciclo.
+
+¿Dónde descargo mis facturas?
+En Configuración > Facturación > Historial, en PDF. Puedes activar el envío
+automático por correo. Las facturas están disponibles en un plazo de 24 horas
+tras el corte.
+
+Métodos de pago aceptados:
+Tarjeta (Visa, Mastercard, Amex) y domiciliación SEPA en la UE. El plan Empresa
+puede pagar por transferencia contra factura con términos NET-30.
+
+¿Por qué falló el cobro de mi tarjeta?
+Causas habituales: tarjeta caducada, fondos insuficientes o bloqueo del banco.
+NexoRH reintenta el cobro a los 3 y 7 días. Actualiza el método en
+Configuración > Facturación > Método de pago. Tras 14 días sin cobro, la cuenta
+pasa a acceso limitado.
+
+¿Cómo cancelo mi suscripción?
+En Configuración > Facturación > Cancelar suscripción. La cancelación es
+efectiva al final del ciclo ya pagado. Tras cancelar, los datos quedan en solo
+lectura 30 días y luego se eliminan.
+
+
+--------------------------------------------------------------------------------
+2. POLÍTICA DE REEMBOLSOS
+--------------------------------------------------------------------------------
+
+NexoRH factura por adelantado. Como norma general no se reembolsan periodos ya
+iniciados, salvo las excepciones siguientes.
+
+Con derecho a reembolso:
+  - Prueba gratuita de 14 días: no hay cargo hasta confirmar plan. Si cancelas
+    durante la prueba, no se genera factura.
+  - Garantía de 30 días para clientes nuevos: reembolso completo del primer
+    periodo si NexoRH no cumple expectativas. Aplica solo al primer pago y una
+    vez por organización.
+  - Cargos duplicados o errores de facturación de NexoRH: reembolso íntegro o
+    crédito en la siguiente factura. Repórtalo dentro de los 60 días.
+
+Sin derecho a reembolso:
+  - Cancelación a mitad de un ciclo ya pagado (conservas acceso hasta el fin
+    del periodo).
+  - Bajada de plan o reducción de empleados a mitad de ciclo (se refleja en la
+    factura siguiente).
+  - Periodos anuales ya transcurridos.
+
+Los reembolsos aprobados se procesan en 5 a 10 días hábiles al método de pago
+original.
+
+
+--------------------------------------------------------------------------------
+3. NÓMINAS Y PAGOS
+--------------------------------------------------------------------------------
+
+Módulo disponible en los planes Profesional y Empresa.
+
+El ciclo de nómina tiene cuatro fases: Preparación (se importan variables del
+mes), Revisión (validación por RRHH), Aprobación y Procesamiento (se generan
+recibos y, si procede, la orden de pago). Una vez aprobada, la nómina se bloquea.
+
+¿Cuándo se pagan las nóminas?
+La fecha la configura tu organización en Nóminas > Configuración > Calendario.
+Por defecto es el último día hábil del mes. El corte para incluir variables es
+3 días hábiles antes de la fecha de pago.
+
+¿Cómo añado un pago extra o un bonus puntual?
+En la nómina en Preparación, abre el empleado y usa Añadir concepto > Pago
+único, indicando si está sujeto a retención y cotización. No se repite
+automáticamente. Para pagos recurrentes, usa Conceptos fijos en la ficha.
+
+¿Cómo corrijo una nómina ya procesada?
+No se puede editar. Opciones: un ajuste (concepto positivo o negativo) en la
+nómina siguiente, o una nómina complementaria del mismo periodo desde
+Nóminas > Acciones > Complementaria.
+
+¿Por qué el neto no es el que esperaba?
+Suele deberse a un cambio en la retención de IRPF, a la regularización
+trimestral, a una ausencia no remunerada o a un concepto variable. Revisa el
+desglose de conceptos y el detalle de retenciones en el recibo.
+
+¿Dónde ven los empleados sus recibos?
+En Mi espacio > Nóminas, en PDF. Reciben una notificación con cada recibo nuevo.
+
+¿NexoRH presenta los modelos fiscales por mí?
+NexoRH genera los documentos y ficheros (por ejemplo, resúmenes para los modelos
+111 y 190) en Nóminas > Informes fiscales. La presentación ante la
+administración es responsabilidad de tu empresa o gestoría.
+
+¿Puedo pagar a los empleados desde NexoRH?
+Sí. Al procesar la nómina se genera un fichero de remesa SEPA (XML pain.001)
+para subir a tu banco. Con la integración bancaria activa (plan Empresa) puedes
+emitir la orden de pago directamente.
+
+
+--------------------------------------------------------------------------------
+4. CONTROL DE TIEMPO Y ASISTENCIA
+--------------------------------------------------------------------------------
+
+Los empleados fichan desde la app móvil (con geolocalización opcional), el
+portal web o un terminal/kiosco compartido (planes Profesional y Empresa). El
+registro es inmutable: las correcciones se hacen mediante solicitudes de ajuste,
+con trazabilidad de quién y cuándo las aprobó.
+
+Olvidé fichar la entrada o la salida.
+En Mi espacio > Fichajes, localiza el día y pulsa Solicitar ajuste, indicando la
+hora correcta y el motivo. Tu manager la aprueba o rechaza. Hasta entonces, el
+día figura como Incompleto y no computa horas.
+
+¿Cómo se calculan las horas extra?
+NexoRH compara las horas registradas con la jornada teórica del horario del
+empleado. El exceso se clasifica según las reglas de tu organización
+(Tiempo > Configuración > Reglas de horas extra) y se envía a nóminas como
+variable del mes.
+
+¿Dónde se configura la jornada teórica?
+En un horario asignado a cada empleado (Datos laborales > Horario). Puede ser
+fijo, rotativo o flexible.
+
+Registro de jornada.
+NexoRH conserva el registro diario con marca de tiempo y permite exportarlo por
+empleado y periodo en Tiempo > Informes > Registro de jornada (PDF o CSV).
+
+¿Puedo gestionar turnos y cuadrantes?
+Sí, con el módulo de Turnos (planes Profesional y Empresa). En Tiempo > Turnos
+creas el cuadrante, asignas empleados y publicas el calendario. Se puede
+habilitar el intercambio de turnos con aprobación del manager.
+
+No me deja fichar desde el móvil.
+Revisa que la app tenga permiso de ubicación si tu empresa exige
+geolocalización, que estés dentro del horario permitido y que tengas conexión.
+Si el fichaje está restringido a ciertas ubicaciones o redes, fuera de ellas el
+botón aparece deshabilitado.
+
+
+--------------------------------------------------------------------------------
+5. VACACIONES Y AUSENCIAS
+--------------------------------------------------------------------------------
+
+Cada tipo de ausencia (vacaciones, asuntos propios, baja médica, permiso, etc.)
+tiene sus reglas: si descuenta saldo, si requiere aprobación y si necesita
+adjunto. El saldo se acumula según la política de devengo (todo al inicio del
+año o proporcional mes a mes).
+
+¿Cómo solicito vacaciones?
+En Mi espacio > Ausencias > Solicitar, elige tipo y fechas. El sistema muestra
+tu saldo y avisa de solapamientos con el equipo. La solicitud va a tu manager.
+
+¿Cómo consulto mi saldo?
+En Mi espacio > Ausencias verás los días disponibles, disfrutados y pendientes
+de aprobación, según la política de devengo de tu organización.
+
+¿Cómo apruebo solicitudes como manager?
+En Equipo > Aprobaciones, con el saldo del empleado y el calendario del equipo a
+la vista. Puedes aprobar, rechazar con motivo o proponer fechas alternativas.
+
+¿Cómo cancelo una solicitud ya aprobada?
+Si aún no ha empezado, en Mi espacio > Ausencias abre la solicitud y pulsa
+Cancelar (puede requerir nueva aprobación); el saldo se devuelve al aprobarse la
+cancelación. Si el periodo ya comenzó, lo gestiona tu Admin de RRHH.
+
+¿Puedo solicitar medio día?
+Sí, si tu organización lo tiene habilitado. Descuenta 0,5 del saldo.
+
+¿Qué pasa con los días que no gasto al final del año?
+Depende de la política de arrastre de tu organización: los días pueden perderse,
+arrastrarse íntegros o arrastrarse con un tope y fecha límite. Consúltalo con tu
+Admin de RRHH.
+
+¿Cómo registro una baja médica?
+Crea una ausencia de tipo Baja médica con la fecha de inicio (la de fin puede
+quedar abierta) y adjunta el parte. No descuenta del saldo de vacaciones.
+
+Configuré festivos pero no salen para algunos empleados.
+Los festivos se asignan por calendario laboral (normalmente por ubicación).
+Revisa que el empleado tenga el calendario correcto en Datos laborales >
+Calendario laboral.
+
+
+--------------------------------------------------------------------------------
+6. ONBOARDING DE EMPLEADOS
+--------------------------------------------------------------------------------
+
+Los flujos de onboarding automatizados están en los planes Profesional y
+Empresa. Un flujo es una plantilla de tareas, documentos y formularios que se
+dispara al crear un empleado con fecha de incorporación. Cada tarea puede tener
+una fecha límite relativa a la incorporación.
+
+¿Cómo doy de alta a un empleado?
+En Empleados > Añadir empleado. Rellena los datos mínimos (nombre, correo,
+puesto, manager, fecha de incorporación) y elige un flujo si procede. Al guardar
+se envía la invitación y se lanzan las tareas. El empleado no cuenta para
+facturación hasta que pasa a estado Activo.
+
+¿Puedo programar un alta futura?
+Sí. Indica la fecha de incorporación futura; el empleado queda en Pendiente de
+incorporación y las tareas se activan según sus fechas relativas.
+
+¿Cómo creo o edito un flujo?
+En Onboarding > Flujos > Nuevo flujo. Puedes tener varios (por ejemplo, oficina
+y remoto). Editar un flujo no afecta a los onboardings ya en curso.
+
+El empleado no recibió el correo de invitación.
+Revisa spam y que el correo sea correcto; pulsa Reenviar invitación en su ficha.
+Pide a IT que añada no-reply@nexorh.com a la lista blanca. Las invitaciones
+caducan a los 14 días.
+
+Firma electrónica de documentos.
+Al añadir un documento de tipo Requiere firma, el empleado lo firma desde su
+espacio. Se registra quién firmó, cuándo y desde qué IP, y el documento se
+archiva en su expediente.
+
+¿Existe offboarding para bajas?
+Sí. Se dispara al marcar una fecha de baja e incluye tareas como revocar
+accesos, recuperar equipo y liquidar. Al completarse, el empleado pasa a Baja y
+deja de contar para facturación.
+
+
+--------------------------------------------------------------------------------
+7. EVALUACIONES DE DESEMPEÑO
+--------------------------------------------------------------------------------
+
+Módulo disponible en los planes Profesional y Empresa. Incluye campañas de
+evaluación (con fechas y participantes), objetivos/OKR y feedback continuo.
+
+¿Cómo lanzo una campaña?
+En Desempeño > Campañas > Nueva campaña. Elige el tipo (autoevaluación,
+evaluación del manager o 360°), el cuestionario, los participantes y las fechas.
+Cada participante recibe una notificación al iniciarse.
+
+¿Qué es una evaluación 360° y quién participa?
+Cada persona es evaluada por varios perfiles: ella misma, su manager, pares y,
+opcionalmente, colaboradores directos. Los pares se asignan manualmente o los
+propone el empleado y los valida el manager.
+
+¿Las respuestas son anónimas?
+Depende de la campaña. En las 360°, las respuestas de los pares suelen mostrarse
+de forma agregada y anónima, mientras que la del manager es identificada. El
+Admin lo define al crear la campaña y no se puede cambiar una vez iniciada.
+
+¿Cómo defino y sigo objetivos u OKR?
+En Desempeño > Objetivos, con título, métrica, fecha límite y responsable. El
+progreso se actualiza manualmente o se vincula a un valor.
+
+¿Puedo dar feedback fuera de una campaña?
+Sí, con Feedback continuo, desde el perfil de un compañero o desde
+Desempeño > Feedback.
+
+¿Quién ve los resultados?
+Por defecto, el empleado los ve cuando la campaña se cierra y comparte; el
+manager, los de su equipo; y RRHH, los de la organización según permisos.
+
+
+--------------------------------------------------------------------------------
+8. PRIVACIDAD, SEGURIDAD Y CUMPLIMIENTO
+--------------------------------------------------------------------------------
+
+Seguridad: datos cifrados en tránsito (TLS 1.2+) y en reposo (AES-256).
+Alojamiento en la UE con copias diarias. Certificaciones ISO 27001 y SOC 2
+Tipo II (informe bajo NDA para plan Empresa). El personal de NexoRH no accede a
+tus datos salvo por una solicitud de soporte tuya, con acceso auditado.
+
+¿Cómo activo la verificación en dos pasos (2FA)?
+Cada usuario en Mi cuenta > Seguridad > Verificación en dos pasos (app TOTP). El
+Admin puede exigirla a toda la organización en Configuración > Seguridad.
+
+¿Hay inicio de sesión único (SSO)?
+Sí, con SAML 2.0 y proveedores como Google Workspace, Microsoft Entra ID y Okta
+(plan Empresa). Se configura en Configuración > Seguridad > SSO, con opción de
+aprovisionamiento SCIM.
+
+¿Cómo funcionan los roles y permisos?
+Roles Empleado, Manager, Admin de RRHH y Propietario. Los planes Profesional y
+Empresa permiten roles personalizados con permisos granulares. Por defecto, un
+empleado solo ve sus propios datos.
+
+¿Dónde se almacenan mis datos?
+En centros de datos de la UE. No se transfieren fuera del EEE salvo con las
+garantías legales adecuadas.
+
+¿Qué pasa con mis datos si cancelo?
+La cuenta queda en solo lectura 30 días para exportar; luego los datos se
+eliminan de forma permanente (y de las copias en el siguiente ciclo de rotación,
+máximo 35 días más).
+
+¿Cómo respondo a una solicitud RGPD de un empleado?
+Desde su ficha, Acciones > Datos personales, puedes generar un informe de datos
+(acceso/portabilidad) o iniciar el borrado. Los datos con obligación legal de
+conservación se anonimizan o bloquean hasta que vence su plazo.
+
+Responsable y encargado del tratamiento.
+Tu organización es la responsable de los datos de sus empleados; NexoRH es el
+encargado y los trata según tus instrucciones y el Acuerdo de Encargo (DPA),
+disponible en Configuración > Legal > DPA.
+
+Registro de auditoría.
+En Configuración > Registro de auditoría (planes Profesional y Empresa) consultas
+quién hizo qué y cuándo. Es de solo lectura y exportable.
+
+
+--------------------------------------------------------------------------------
+9. INTEGRACIONES Y API
+--------------------------------------------------------------------------------
+
+Las integraciones se gestionan en Configuración > Integraciones. Categorías:
+identidad y accesos (Google, Entra ID, Okta), comunicación (Slack, Teams),
+calendario (Google, Outlook), contabilidad/ERP y bancos/pagos. Límite de
+integraciones: 2 en Esencial, 15 en Profesional, sin límite en Empresa.
+
+¿Cómo conecto Slack o Teams?
+En Configuración > Integraciones > Slack/Teams, pulsa Conectar y autoriza la app.
+Elige qué notificaciones enviar (ausencias, aprobaciones) y a qué canales.
+Requiere permisos de administrador en Slack/Teams.
+
+¿Cómo sincronizo ausencias con el calendario?
+Conecta Google Calendar u Outlook; cada empleado autoriza su cuenta. Las
+ausencias aprobadas aparecen en su calendario. La sincronización es
+unidireccional (de NexoRH al calendario).
+
+¿NexoRH tiene API?
+Sí, API REST en los planes Profesional y Empresa, para leer y escribir
+empleados, ausencias, fichajes y más. Documentación en developers.nexorh.com.
+Genera credenciales en Configuración > API > Claves.
+
+Autenticación de la API.
+Con una clave de API (token Bearer) en la cabecera Authorization. Las claves
+tienen ámbitos para limitar el acceso y se muestran completas una sola vez al
+crearlas. Se pueden revocar en cualquier momento.
+
+Límites de uso (rate limits).
+120 peticiones/minuto por clave en Profesional y 600/minuto en Empresa. Al
+superarlos, la API responde 429 con cabecera Retry-After. Usa reintentos con
+retroceso exponencial.
+
+Webhooks.
+Notifican a tu sistema cuando ocurre un evento (alta de empleado, ausencia
+aprobada, nómina procesada, etc.). Se configuran en Configuración > API >
+Webhooks, con URL de destino y eventos. Cada envío va firmado (cabecera
+X-NexoRH-Signature) y se reintenta hasta 5 veces.
+
+Una integración dejó de sincronizar.
+Lo habitual es que la autorización haya caducado o se haya revocado en el
+sistema externo. En Configuración > Integraciones, localiza la que muestra Error
+o Desconectada y pulsa Reconectar.
+
+
+--------------------------------------------------------------------------------
+10. SOLUCIÓN DE PROBLEMAS COMUNES
+--------------------------------------------------------------------------------
+
+No puedo iniciar sesión / olvidé mi contraseña.
+Pulsa "¿Olvidaste tu contraseña?" e introduce tu correo; el enlace es válido
+60 minutos. Si tu empresa usa SSO, no tienes contraseña de NexoRH: entra con el
+botón de tu proveedor (Google/Microsoft/Okta).
+
+Mi cuenta está bloqueada tras varios intentos.
+Se bloquea 15 minutos por seguridad. Espera o restablece la contraseña para
+desbloquear. Un Admin también puede desbloquear al usuario desde su ficha.
+
+Perdí el acceso a mi app de 2FA.
+Usa tus códigos de recuperación si los guardaste. Si no, un Admin de RRHH puede
+restablecer tu 2FA desde tu ficha tras verificar tu identidad.
+
+Un empleado no recibe las notificaciones.
+Comprueba: el correo en su ficha, que no las tenga desactivadas en Mi cuenta >
+Notificaciones, la carpeta de spam, y que el dominio no bloquee
+no-reply@nexorh.com. Para push, revisa el permiso de notificaciones del móvil.
+
+La app móvil no carga o va lenta.
+Cierra y reábrela, actualiza a la última versión, revisa la conexión y, si sigue,
+cierra sesión y vuelve a entrar. Consulta el estado del servicio en
+status.nexorh.com.
+
+Una exportación no termina de generarse.
+Las exportaciones grandes se procesan en segundo plano (varios minutos). Si pasan
+30 minutos en proceso, cancela y relánzala acotando fechas o empleados. Los
+enlaces de descarga caducan (72 h la exportación completa).
+
+Los totales de un informe no cuadran.
+Revisa los filtros aplicados (fechas, estado del empleado, centro); los empleados
+en Baja o Suspendido pueden quedar fuera. En nóminas, los ajustes y
+complementarias afectan a los totales del periodo.
+
+
+--------------------------------------------------------------------------------
+11. SOPORTE Y NIVELES DE SERVICIO (SLA)
+--------------------------------------------------------------------------------
+
+Canales de soporte:
+  - Centro de ayuda: ayuda.nexorh.com
+  - Chat y chatbot dentro de la aplicación
+  - Correo: soporte@nexorh.com
+  - Teléfono: solo plan Empresa
+  - Gestor de cuenta dedicado: solo plan Empresa
+
+Horario de atención:
+  - Esencial y Profesional: lunes a viernes, 9:00–18:00 (CET), salvo festivos.
+  - Empresa: cobertura ampliada según contrato, con opción 24/7 para
+    incidencias críticas.
+
+Tiempos de primera respuesta objetivo (en horario de atención):
+  - Crítica (servicio caído): 8 h Esencial / 4 h Profesional / 1 h Empresa.
+  - Alta (función clave bloqueada): 1 día háb. / 8 h / 2 h.
+  - Media (con solución alternativa): 2 días háb. / 1 día háb. / 8 h.
+  - Baja (consulta o mejora): 3 días háb. / 2 días háb. / 1 día háb.
+
+¿Cómo abro un ticket?
+Desde el icono de ayuda en la app o escribiendo a soporte@nexorh.com. Incluye
+descripción, pasos para reproducir, capturas y el correo del usuario afectado.
+
+¿Cómo sé si hay una caída del servicio?
+En status.nexorh.com, con estado en tiempo real e historial. Puedes suscribirte
+para recibir avisos. Si el servicio figura operativo pero tienes problemas, es
+probable que sea local.
+
+Compromiso de disponibilidad.
+Objetivo de disponibilidad mensual del 99,9 %. El plan Empresa dispone de un SLA
+contractual con posibles créditos de servicio. El mantenimiento programado se
+anuncia con antelación.
+
+¿Puedo pedir una nueva funcionalidad?
+Sí, desde Ayuda > Sugerir una mejora o al equipo de soporte. Las peticiones se
+registran en el portal de producto, donde pueden votarse.
