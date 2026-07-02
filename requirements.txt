@@ -1,0 +1,13 @@
+sentence-transformers
+faiss-cpu
+numpy
+pandas
+jupyter
+langchain
+langchain-community
+langchain-openai
+langchain-chroma
+langchain-classic
+langchain-text-splitters
+pypdf
+# argparse — stdlib de Python, no requiere instalación
